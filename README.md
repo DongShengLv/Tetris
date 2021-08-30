@@ -252,3 +252,4 @@ export class GamePageViewer implements GameViewer {
 ## 游戏界面
 
 在控制游戏的显示的类 GameViewer中添加需要的接口
+# Tetris
