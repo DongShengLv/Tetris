@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>俄罗斯方块</title>
+  <style>
+    #root {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+    }
+
+    #panel {
+      width: 300px;
+      height: 300px;
+      background: black;
+      position: relative;
+    }
+    #tip .next{
+      position:relative;
+      width:150px;
+      height:120px;
+    }
+
+    #tip .score{
+      width: 100%;
+      height: 100px;
+      color:black;
+      font-size: 2em;
+      text-align:center;
+      line-height: 100px;
+    }
+
+    #tip .control {
+      width: 100%;
+      height: auto;
+      text-align: center;
+    }
+
+    #panel .msg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,.3);
+      z-index: 99;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: none;
+    }
+
+    #panel .msg p{
+      border: 2px solid #fff;
+      padding: 1em;
+      color: #fff;  
+      background: brown;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root">
+    <div id="panel">
+      <div class="msg">
+        <p></p>
+      </div>
+    </div>
+    <div id="tip">
+      <div class="next"></div>
+      <div class="score"></div>
+      <div class="control">
+        <p>
+          使用键盘进行游戏:
+        </p>
+        <p>
+          ↑:旋转
+        </p>
+        <p>
+          ↓:下移
+        </p>
+        <p>
+          ←:左移
+        </p>
+        <p>
+          →:右移
+        </p>
+        <p>
+          回车:开始
+        </p>
+        <p>
+          空格:暂停/恢复
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
